@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="@android:color/black"
+    tools:context=".PlayActivity">
 
-    <Button
-        android:id="@+id/startPlay"
-        android:layout_width="wrap_content"
+    <com.sinawangsj1992.lib.MarqueeSurfaceView
+        android:id="@+id/marquee"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        android:text="开始"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
